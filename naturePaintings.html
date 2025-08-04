@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for proper document setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta tags -->
+    <title>Nature Paintings | Palette Pulse</title>
+    <meta
+      name="description"
+      content="Discover beautiful nature paintings from talented artists. Browse scenic nature scenes, wildlife art, and outdoor landscapes at Palette Pulse."
+    />
+    <meta
+      name="keywords"
+      content="nature paintings, wildlife art, outdoor scenes, nature landscapes, nature artists, Palette Pulse"
+    />
+    <meta name="author" content="Palette Pulse" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Nature Paintings | Palette Pulse" />
+    <meta
+      property="og:description"
+      content="Discover beautiful nature paintings from talented artists. Browse scenic nature scenes, wildlife art, and outdoor landscapes at Palette Pulse."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://palettepulse.com/nature-paintings"
+    />
+    <meta property="og:image" content="assets/logo-placeholder.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nature Paintings | Palette Pulse" />
+    <meta
+      name="twitter:description"
+      content="Discover beautiful nature paintings from talented artists. Browse scenic nature scenes, wildlife art, and outdoor landscapes at Palette Pulse."
+    />
+    <meta name="twitter:image" content="assets/logo-placeholder.png" />
+
+    <!-- Google Fonts - Poppins font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading spinner -->
+    <div id="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading Palette Pulse...</p>
+    </div>
+
+    <!-- Header section: Contains the top bar and main navigation -->
+    <header>
+      <!-- Top bar: Contains logo and utility icons (search, account, cart) -->
+      <div id="top-bar">
+        <!-- Logo: Links back to homepage -->
+        <a href="index.html" class="logo">
+          <img
+            src="assets/logo-placeholder.png"
+            alt="Palette Pulse Logo"
+            width="120"
+          />
+        </a>
+
+        <!-- Utility navigation: Search bar and icons -->
+        <div class="utility-nav">
+          <!-- Search form -->
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search artworks..."
+              aria-label="Search artworks"
+            />
+            <button type="submit" aria-label="Search">
+              <span>🔍</span>
+            </button>
+          </form>
+
+          <!-- Utility icons -->
+          <a href="#" class="icon-link" aria-label="View Favourites">
+            <span>♥</span>
+            <span class="sr-only">View Favourites</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Account">
+            <span>👤</span>
+            <span class="sr-only">Account</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Shopping Cart">
+            <span>🛒</span>
+            <span class="sr-only">Shopping Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main navigation: Primary site navigation with dropdowns -->
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li class="dropdown-parent">
+            <a href="prints.html">Prints</a>
+            <ul class="dropdown">
+              <li><a href="wallArt.html">Wall Art</a></li>
+              <li><a href="vintagePrints.html">Vintage</a></li>
+              <li><a href="photographyPrints.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-parent">
+            <a href="paintings.html">Paintings</a>
+            <ul class="dropdown">
+              <li><a href="abstractPaintings.html">Abstract Art</a></li>
+              <li><a href="indianPaintings.html">Indian Art</a></li>
+              <li><a href="blackWhitePaintings.html">Black & White</a></li>
+              <li><a href="modernArtPaintings.html">Modern Art</a></li>
+              <li><a href="landscapePaintings.html">Landscape</a></li>
+              <li><a href="naturePaintings.html">Nature</a></li>
+            </ul>
+          </li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main content: Contains the primary page content -->
+    <main>
+      <!-- Promotional Banner -->
+      <div class="promo-banner">
+        <p>
+          ✨ EXTRA 20% OFF Orders Over ₹5000 | Ends in:
+          <span id="countdown">15:04:48</span> ✨
+        </p>
+      </div>
+
+      <!-- Category Container -->
+      <div class="category-container">
+        <h1>Nature Paintings</h1>
+
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          <details open>
+            <summary>Style / Theme</summary>
+            <ul>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="theme"
+                    value="wildlife"
+                    checked
+                  />
+                  Wildlife
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="forest" />
+                  Forest
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="flora" />
+                  Flora
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="fauna" />
+                  Fauna
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="botanical" />
+                  Botanical
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="organic" />
+                  Organic
+                </label>
+              </li>
+            </ul>
+          </details>
+
+          <details open>
+            <summary>Size</summary>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="small" />
+                  Small (Under 24")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="medium" />
+                  Medium (24" - 36")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="large" />
+                  Large (Over 36")
+                </label>
+              </li>
+            </ul>
+          </details>
+        </aside>
+
+        <!-- Product Display Area -->
+        <section class="product-display">
+          <!-- Sorting Container -->
+          <div class="sort-container">
+            <label for="sort-by">Sort by:</label>
+            <select name="sort-by" id="sort-by">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Nature/Untitled-design-15-1000x1000.jpg"
+                  alt="Untitled Design 15 Nature Painting"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+                <span class="badge">New</span>
+              </div>
+              <h3>Untitled Design 15</h3>
+              <p>by Contemporary Artist</p>
+              <p class="price">₹24,500</p>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Nature/tress-2.jpg"
+                  alt="Trees 2 Nature Painting"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+                <span class="badge">New</span>
+              </div>
+              <h3>Trees 2</h3>
+              <p>by Nature Artist</p>
+              <p class="price">₹19,800</p>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Nature/1836.jpg"
+                  alt="Nature Painting 1836"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+                <span class="badge">New</span>
+              </div>
+              <h3>Nature Painting 1836</h3>
+              <p>by Contemporary Artist</p>
+              <p class="price">₹27,500</p>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Nature/yuvraj-patil-4.jpg"
+                  alt="Yuvraj Patil Nature Painting 4"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+                <span class="badge">New</span>
+              </div>
+              <h3>Yuvraj Patil Nature Painting 4</h3>
+              <p>by Yuvraj Patil</p>
+              <p class="price">₹31,200</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer: Site footer with additional links and information -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Palette Pulse</h3>
+          <p>Curating beautiful art for your space</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="paintings.html">Original Paintings</a></li>
+            <li><a href="prints.html">Art Prints</a></li>
+            <li><a href="prints.html#photography">Photography</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Palette Pulse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript file for interactivity -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

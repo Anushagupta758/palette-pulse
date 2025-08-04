@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for proper document setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta tags -->
+    <title>Art Prints | Palette Pulse</title>
+    <meta
+      name="description"
+      content="Discover high-quality art prints including wall art, vintage prints, and photography. Limited editions and premium reproductions at Palette Pulse."
+    />
+    <meta
+      name="keywords"
+      content="art prints, wall art, vintage prints, photography prints, limited edition prints, Palette Pulse"
+    />
+    <meta name="author" content="Palette Pulse" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Art Prints | Palette Pulse" />
+    <meta
+      property="og:description"
+      content="Discover high-quality art prints including wall art, vintage prints, and photography. Limited editions and premium reproductions at Palette Pulse."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://palettepulse.com/prints" />
+    <meta property="og:image" content="assets/logo-placeholder.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Art Prints | Palette Pulse" />
+    <meta
+      name="twitter:description"
+      content="Discover high-quality art prints including wall art, vintage prints, and photography. Limited editions and premium reproductions at Palette Pulse."
+    />
+    <meta name="twitter:image" content="assets/logo-placeholder.png" />
+
+    <!-- Google Fonts - Poppins font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading spinner -->
+    <div id="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading Palette Pulse...</p>
+    </div>
+
+    <!-- Header section: Contains the top bar and main navigation -->
+    <header>
+      <!-- Top bar: Contains logo and utility icons (search, account, cart) -->
+      <div id="top-bar">
+        <!-- Logo: Links back to homepage -->
+        <a href="index.html" class="logo">
+          <img
+            src="assets/logo-placeholder.png"
+            alt="Palette Pulse Logo"
+            width="120"
+          />
+        </a>
+
+        <!-- Utility navigation: Search bar and icons -->
+        <div class="utility-nav">
+          <!-- Search form -->
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search artworks..."
+              aria-label="Search artworks"
+            />
+            <button type="submit" aria-label="Search">
+              <span>🔍</span>
+            </button>
+          </form>
+
+          <!-- Utility icons -->
+          <a href="#" class="icon-link" aria-label="View Favourites">
+            <span>♥</span>
+            <span class="sr-only">View Favourites</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Account">
+            <span>👤</span>
+            <span class="sr-only">Account</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Shopping Cart">
+            <span>🛒</span>
+            <span class="sr-only">Shopping Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main navigation: Primary site navigation with dropdowns -->
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li class="dropdown-parent">
+            <a href="prints.html">Prints</a>
+            <ul class="dropdown">
+              <li><a href="wallArt.html">Wall Art</a></li>
+              <li><a href="vintagePrints.html">Vintage</a></li>
+              <li><a href="photographyPrints.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-parent">
+            <a href="paintings.html">Paintings</a>
+            <ul class="dropdown">
+              <li><a href="abstractPaintings.html">Abstract Art</a></li>
+              <li><a href="paintings.html#indian">Indian Art</a></li>
+              <li><a href="blackWhitePaintings.html">Black & White</a></li>
+              <li><a href="modernArtPaintings.html">Modern Art</a></li>
+              <li><a href="landscapePaintings.html">Landscape</a></li>
+              <li><a href="naturePaintings.html">Nature</a></li>
+            </ul>
+          </li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main content: Contains the primary page content -->
+    <main>
+      <!-- Promotional Banner -->
+      <div class="promo-banner">
+        <p>
+          ✨ EXTRA 20% OFF Orders Over ₹5000 | Ends in:
+          <span id="countdown">15:04:48</span> ✨
+        </p>
+      </div>
+
+      <!-- Category Container -->
+      <div class="category-container">
+        <div class="section-header">
+          <h1>Art Prints</h1>
+          <p class="section-subtitle">
+            High-quality reproductions for every space
+          </p>
+        </div>
+
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          <details open>
+            <summary>Print Type</summary>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="print-type" value="wall-art" />
+                  Wall Art
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="print-type" value="vintage" />
+                  Vintage
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="print-type"
+                    value="photography"
+                  />
+                  Photography
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="print-type"
+                    value="limited-edition"
+                  />
+                  Limited Edition
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="print-type"
+                    value="digital-art"
+                  />
+                  Digital Art
+                </label>
+              </li>
+            </ul>
+          </details>
+
+          <details open>
+            <summary>Size</summary>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="small" />
+                  Small (8" x 10")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="medium" />
+                  Medium (11" x 14")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="large" />
+                  Large (16" x 20")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="extra-large" />
+                  Extra Large (20" x 24")
+                </label>
+              </li>
+            </ul>
+          </details>
+
+          <details open>
+            <summary>Price Range</summary>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="price" value="under-1000" />
+                  Under ₹1,000
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="price" value="1000-2500" />
+                  ₹1,000 - ₹2,500
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="price" value="2500-5000" />
+                  ₹2,500 - ₹5,000
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="price" value="over-5000" />
+                  Over ₹5,000
+                </label>
+              </li>
+            </ul>
+          </details>
+        </aside>
+
+        <!-- Product Display Area -->
+        <section class="product-display">
+          <!-- Sorting Container -->
+          <div class="sort-container">
+            <label for="sort-by">Sort by:</label>
+            <select name="sort-by" id="sort-by">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <!-- Print 1 -->
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Wall-Art/1a2db605201e091f2cb0a56fe88a3e08.jpg"
+                  alt="Contemporary Wall Art Print"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Contemporary Wall Art Print 1</h3>
+                <p class="artist-name">by Wall Art Studio</p>
+                <p class="dimensions">16" x 20" • Giclee Print</p>
+                <p class="price">₹8,500</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Print 2 -->
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Wall-Art/1d9c3279e80953b0a7615b5533e1100b.jpg"
+                  alt="Modern Wall Art Print"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Modern Wall Art Print 2</h3>
+                <p class="artist-name">by Wall Art Studio</p>
+                <p class="dimensions">20" x 24" • Fine Art Print</p>
+                <p class="price">₹9,200</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Print 3 -->
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Wall-Art/215205fa5fedbcbb0d0cdfe2f09a76f4.jpg"
+                  alt="Abstract Wall Art Print"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Abstract Wall Art Print 3</h3>
+                <p class="artist-name">by Wall Art Studio</p>
+                <p class="dimensions">18" x 22" • Canvas Print</p>
+                <p class="price">₹7,800</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Print 4 -->
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Vintage/0386aa9ea12580ad612ecd1fbc4bfc9f.jpg"
+                  alt="Vintage Art Print"
+                  loading="lazy"
+                />
+                <span class="badge featured">Featured</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Vintage Art Print 1</h3>
+                <p class="artist-name">by Vintage Collection</p>
+                <p class="dimensions">16" x 20" • Archival Print</p>
+                <p class="price">₹6,500</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Print 5 -->
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Photography/0d31180b76a7eb6073e63250f4050c26.jpg"
+                  alt="Photography Print"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Photography Print 1</h3>
+                <p class="artist-name">by Photo Studio</p>
+                <p class="dimensions">20" x 24" • Photo Print</p>
+                <p class="price">₹5,200</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Print 6 -->
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Modern-Art/Boho wall modern 1.webp"
+                  alt="Modern Art Print"
+                  loading="lazy"
+                />
+                <span class="badge featured">Featured</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Modern Art Print 1</h3>
+                <p class="artist-name">by Modern Art Studio</p>
+                <p class="dimensions">24" x 36" • Canvas Print</p>
+                <p class="price">₹12,800</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer: Site footer with additional links and information -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Palette Pulse</h3>
+          <p>Curating beautiful art for your space</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="paintings.html">Original Paintings</a></li>
+            <li><a href="prints.html">Art Prints</a></li>
+            <li><a href="prints.html#photography">Photography</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Palette Pulse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript file for interactivity -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

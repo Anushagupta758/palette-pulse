@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas | Palette Pulse - Design Your Space</title>
+    <meta
+      name="description"
+      content="Design your space with our interactive canvas tool. Drag and drop wall colors and paintings to visualize your perfect room."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="canvas-styles.css" />
+  </head>
+  <body>
+    <!-- Loading spinner -->
+    <div id="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading Canvas...</p>
+    </div>
+
+    <!-- Header section -->
+    <header>
+      <div id="top-bar">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/logo-placeholder.png"
+            alt="Palette Pulse Logo"
+            width="120"
+          />
+        </a>
+        <div class="utility-nav">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search artworks..."
+              aria-label="Search artworks"
+            />
+            <button type="submit" aria-label="Search">
+              <span>🔍</span>
+            </button>
+          </form>
+          <a href="#" class="icon-link" aria-label="View Favourites">
+            <span>♥</span>
+            <span class="sr-only">View Favourites</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Account">
+            <span>👤</span>
+            <span class="sr-only">Account</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Shopping Cart">
+            <span>🛒</span>
+            <span class="sr-only">Shopping Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li class="dropdown-parent">
+            <a href="prints.html">Prints</a>
+            <ul class="dropdown">
+              <li><a href="wallArt.html">Wall Art</a></li>
+              <li><a href="vintagePrints.html">Vintage</a></li>
+              <li><a href="photographyPrints.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-parent">
+            <a href="paintings.html">Paintings</a>
+            <ul class="dropdown">
+              <li><a href="abstractPaintings.html">Abstract Art</a></li>
+              <li><a href="indianPaintings.html">Indian Art</a></li>
+              <li><a href="blackWhitePaintings.html">Black & White</a></li>
+              <li><a href="modernArtPaintings.html">Modern Art</a></li>
+              <li><a href="landscapePaintings.html">Landscape</a></li>
+              <li><a href="naturePaintings.html">Nature</a></li>
+            </ul>
+          </li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="canvas.html" class="active">Canvas</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="canvas-container">
+        <div class="sidebar">
+          <!-- Color Palette Section -->
+          <div class="color-palette-section">
+            <h3>Wall Colors</h3>
+            <div class="color-palette">
+              <div
+                class="color-swatch"
+                data-color="#F5F5DC"
+                style="background-color: #f5f5dc"
+                draggable="true"
+                title="Beige"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#F0F8FF"
+                style="background-color: #f0f8ff"
+                draggable="true"
+                title="Alice Blue"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#FFF8DC"
+                style="background-color: #fff8dc"
+                draggable="true"
+                title="Cornsilk"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#F5F5F5"
+                style="background-color: #f5f5f5"
+                draggable="true"
+                title="White Smoke"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#F0FFF0"
+                style="background-color: #f0fff0"
+                draggable="true"
+                title="Honeydew"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#FFF0F5"
+                style="background-color: #fff0f5"
+                draggable="true"
+                title="Lavender Blush"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#FDF5E6"
+                style="background-color: #fdf5e6"
+                draggable="true"
+                title="Old Lace"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#F8F8FF"
+                style="background-color: #f8f8ff"
+                draggable="true"
+                title="Ghost White"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#F5FFFA"
+                style="background-color: #f5fffa"
+                draggable="true"
+                title="Mint Cream"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="#FFFAF0"
+                style="background-color: #fffaf0"
+                draggable="true"
+                title="Floral White"
+              ></div>
+            </div>
+
+            <!-- Custom Color Input -->
+            <div class="custom-color-section">
+              <h4>Custom Color</h4>
+              <div class="custom-color-input">
+                <input
+                  type="text"
+                  id="custom-color-input"
+                  placeholder="#FF5733"
+                  pattern="^#[0-9A-Fa-f]{6}$"
+                  title="Enter a valid hex color code (e.g., #FF5733)"
+                />
+                <button id="apply-custom-color" class="apply-color-btn">
+                  Apply
+                </button>
+              </div>
+              <div class="color-preview" id="color-preview"></div>
+            </div>
+          </div>
+
+          <!-- Paintings Section -->
+          <div class="paintings-section">
+            <h3>Paintings</h3>
+            <div class="paintings-grid">
+              <div class="painting-item" draggable="true" data-painting="ocean">
+                <img src="images/Ocean.webp" alt="Ocean Dreams" />
+                <span>Ocean Dreams</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="sunset"
+              >
+                <img src="images/Sunset.webp" alt="Sunset Valley" />
+                <span>Sunset Valley</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="geometric"
+              >
+                <img src="images/Geometric.webp" alt="Urban Geometry" />
+                <span>Urban Geometry</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="forest"
+              >
+                <img src="images/Forest1.webp" alt="Forest Stream" />
+                <span>Forest Stream</span>
+              </div>
+              <div class="painting-item" draggable="true" data-painting="bw1">
+                <img src="images/BW1.webp" alt="Black & White Art 1" />
+                <span>Minimalist BW</span>
+              </div>
+              <div class="painting-item" draggable="true" data-painting="bw2">
+                <img src="images/BW2.webp" alt="Black & White Art 2" />
+                <span>Abstract BW</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="modern"
+              >
+                <img
+                  src="images/Modern Wall art 4.webp"
+                  alt="Modern Wall Art"
+                />
+                <span>Modern Art</span>
+              </div>
+              <div class="painting-item" draggable="true" data-painting="boho">
+                <img src="images/Boho wall modern 1.webp" alt="Boho Wall Art" />
+                <span>Boho Art</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="tropical"
+              >
+                <img
+                  src="images/Set of 3, Green And Gold Tropical Leaf Modern Art Set 5.webp"
+                  alt="Tropical Leaves"
+                />
+                <span>Tropical Leaves</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="panther"
+              >
+                <img
+                  src="images/Set of 2 Black Panther Panels, Modern Art 2    3.webp"
+                  alt="Black Panther Art"
+                />
+                <span>Panther Art</span>
+              </div>
+              <div class="painting-item" draggable="true" data-painting="rings">
+                <img
+                  src="images/1-Image-Rings-III-BW_720x Black and white 4.webp"
+                  alt="Rings Art"
+                />
+                <span>Rings Art</span>
+              </div>
+              <div class="painting-item" draggable="true" data-painting="river">
+                <img
+                  src="images/1-Image-River-Path_720x Black and white 3.webp"
+                  alt="River Path"
+                />
+                <span>River Path</span>
+              </div>
+              <div
+                class="painting-item"
+                draggable="true"
+                data-painting="simplicity"
+              >
+                <img
+                  src="images/1-Image-Simplicity-BW_720x Black and white1.webp"
+                  alt="Simplicity"
+                />
+                <span>Simplicity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canvas Area -->
+        <div class="canvas-area">
+          <div class="canvas-header">
+            <h2>Design Your Space</h2>
+            <p>
+              Drag colors to paint the wall, then add paintings to visualize
+              your perfect room
+            </p>
+          </div>
+
+          <!-- Canvas Controls -->
+          <div class="canvas-controls">
+            <button id="reset-canvas" class="control-btn">Reset Canvas</button>
+            <button id="save-design" class="control-btn">Save Design</button>
+          </div>
+
+          <div class="wall-canvas" id="wall-canvas">
+            <div class="wall-surface" id="wall-surface">
+              <!-- Paintings will be dropped here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Palette Pulse</h3>
+          <p>Curating beautiful art for your space</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Original Paintings</a></li>
+            <li><a href="#">Art Prints</a></li>
+            <li><a href="#">Photography</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Palette Pulse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for proper document setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta tags -->
+    <title>Abstract Paintings | Palette Pulse</title>
+    <meta
+      name="description"
+      content="Discover stunning abstract paintings from talented artists. Browse contemporary abstract art, modern compositions, and expressive artworks at Palette Pulse."
+    />
+    <meta
+      name="keywords"
+      content="abstract paintings, contemporary art, modern abstract, expressive art, abstract artists, Palette Pulse"
+    />
+    <meta name="author" content="Palette Pulse" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Abstract Paintings | Palette Pulse" />
+    <meta
+      property="og:description"
+      content="Discover stunning abstract paintings from talented artists. Browse contemporary abstract art, modern compositions, and expressive artworks at Palette Pulse."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://palettepulse.com/abstract-paintings"
+    />
+    <meta property="og:image" content="assets/logo-placeholder.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abstract Paintings | Palette Pulse" />
+    <meta
+      name="twitter:description"
+      content="Discover stunning abstract paintings from talented artists. Browse contemporary abstract art, modern compositions, and expressive artworks at Palette Pulse."
+    />
+    <meta name="twitter:image" content="assets/logo-placeholder.png" />
+
+    <!-- Google Fonts - Poppins font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading spinner -->
+    <div id="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading Palette Pulse...</p>
+    </div>
+
+    <!-- Header section: Contains the top bar and main navigation -->
+    <header>
+      <!-- Top bar: Contains logo and utility icons (search, account, cart) -->
+      <div id="top-bar">
+        <!-- Logo: Links back to homepage -->
+        <a href="index.html" class="logo">
+          <img
+            src="assets/logo-placeholder.png"
+            alt="Palette Pulse Logo"
+            width="120"
+          />
+        </a>
+
+        <!-- Utility navigation: Search bar and icons -->
+        <div class="utility-nav">
+          <!-- Search form -->
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search artworks..."
+              aria-label="Search artworks"
+            />
+            <button type="submit" aria-label="Search">
+              <span>🔍</span>
+            </button>
+          </form>
+
+          <!-- Utility icons -->
+          <a href="#" class="icon-link" aria-label="View Favourites">
+            <span>♥</span>
+            <span class="sr-only">View Favourites</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Account">
+            <span>👤</span>
+            <span class="sr-only">Account</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Shopping Cart">
+            <span>🛒</span>
+            <span class="sr-only">Shopping Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main navigation: Primary site navigation with dropdowns -->
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li class="dropdown-parent">
+            <a href="prints.html">Prints</a>
+            <ul class="dropdown">
+              <li><a href="wallArt.html">Wall Art</a></li>
+              <li><a href="vintagePrints.html">Vintage</a></li>
+              <li><a href="photographyPrints.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-parent">
+            <a href="paintings.html">Paintings</a>
+            <ul class="dropdown">
+              <li><a href="abstractPaintings.html">Abstract Art</a></li>
+              <li><a href="indianPaintings.html">Indian Art</a></li>
+              <li><a href="blackWhitePaintings.html">Black & White</a></li>
+              <li><a href="modernArtPaintings.html">Modern Art</a></li>
+              <li><a href="landscapePaintings.html">Landscape</a></li>
+              <li><a href="naturePaintings.html">Nature</a></li>
+            </ul>
+          </li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main content: Contains the primary page content -->
+    <main>
+      <!-- Promotional Banner -->
+      <div class="promo-banner">
+        <p>
+          ✨ EXTRA 20% OFF Orders Over ₹5000 | Ends in:
+          <span id="countdown">15:04:48</span> ✨
+        </p>
+      </div>
+
+      <!-- Category Container -->
+      <div class="category-container">
+        <h1>Abstract Paintings</h1>
+
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          <details open>
+            <summary>Style / Theme</summary>
+            <ul>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="theme"
+                    value="geometric"
+                    checked
+                  />
+                  Geometric
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="expressionist" />
+                  Expressionist
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="color-field" />
+                  Color Field
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="minimalist" />
+                  Minimalist
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="contemporary" />
+                  Contemporary
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="modern" />
+                  Modern
+                </label>
+              </li>
+            </ul>
+          </details>
+
+          <details open>
+            <summary>Size</summary>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="small" />
+                  Small (Under 24")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="medium" />
+                  Medium (24" - 36")
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="size" value="large" />
+                  Large (Over 36")
+                </label>
+              </li>
+            </ul>
+          </details>
+        </aside>
+
+        <!-- Product Display Area -->
+        <section class="product-display">
+          <!-- Sorting Container -->
+          <div class="sort-container">
+            <label for="sort-by">Sort by:</label>
+            <select name="sort-by" id="sort-by">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/Rahul-Dangat-Blossom.png"
+                  alt="Rahul Dangat Blossom Abstract Painting"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Rahul Dangat Blossom</h3>
+                <p class="artist-name">by Rahul Dangat</p>
+                <p class="dimensions">48" x 48" • Acrylic on Canvas</p>
+                <p class="price">₹38,500</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/rahul-dangat-1000x1000.jpg"
+                  alt="Rahul Dangat Abstract Painting"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Rahul Dangat Abstract</h3>
+                <p class="artist-name">by Rahul Dangat</p>
+                <p class="dimensions">50" x 50" • Acrylic on Canvas</p>
+                <p class="price">₹42,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/Vipta-50x50-1.jpg"
+                  alt="Vipta Abstract Painting"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Vipta Abstract</h3>
+                <p class="artist-name">by Vipta</p>
+                <p class="dimensions">50" x 50" • Oil on Canvas</p>
+                <p class="price">₹28,500</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/Untitled-design-11-1000x1000.jpg"
+                  alt="Untitled Design 11 Abstract"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Untitled Design 11</h3>
+                <p class="artist-name">by Contemporary Artist</p>
+                <p class="dimensions">40" x 40" • Mixed Media</p>
+                <p class="price">₹25,800</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/Vanita-Gupta.jpg"
+                  alt="Vanita Gupta Abstract Painting"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Vanita Gupta Abstract</h3>
+                <p class="artist-name">by Vanita Gupta</p>
+                <p class="dimensions">36" x 48" • Acrylic on Canvas</p>
+                <p class="price">₹35,200</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/Shipa-Patole-yellow.jpeg"
+                  alt="Shipa Patole Yellow Abstract"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Shipa Patole Yellow</h3>
+                <p class="artist-name">by Shipa Patole</p>
+                <p class="dimensions">48" x 36" • Acrylic on Canvas</p>
+                <p class="price">₹32,500</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/Shipa-Patole-red.jpeg"
+                  alt="Shipa Patole Red Abstract"
+                  loading="lazy"
+                />
+                <span class="badge featured">Featured</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Shipa Patole Red</h3>
+                <p class="artist-name">by Shipa Patole</p>
+                <p class="dimensions">48" x 36" • Acrylic on Canvas</p>
+                <p class="price">₹34,800</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Abstract/L-N-V-Sriniwas-1000x1000.jpg"
+                  alt="L N V Sriniwas Abstract"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>L N V Sriniwas Abstract</h3>
+                <p class="artist-name">by L N V Sriniwas</p>
+                <p class="dimensions">50" x 50" • Oil on Canvas</p>
+                <p class="price">₹45,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer: Site footer with additional links and information -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Palette Pulse</h3>
+          <p>Curating beautiful art for your space</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="paintings.html">Original Paintings</a></li>
+            <li><a href="prints.html">Art Prints</a></li>
+            <li><a href="prints.html#photography">Photography</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Palette Pulse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript file for interactivity -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

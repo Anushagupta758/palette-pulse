@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for proper document setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta tags -->
+    <title>Jyotsna Sonavane - Artist | Palette Pulse</title>
+    <meta
+      name="description"
+      content="Discover the contemporary art of Jyotsna Sonavane. Explore her acrylic paintings that showcase modern artistic expressions and creative compositions."
+    />
+    <meta
+      name="keywords"
+      content="Jyotsna Sonavane, contemporary art, acrylic paintings, modern art, Palette Pulse"
+    />
+    <meta name="author" content="Palette Pulse" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta
+      property="og:title"
+      content="Jyotsna Sonavane - Artist | Palette Pulse"
+    />
+    <meta
+      property="og:description"
+      content="Discover the contemporary art of Jyotsna Sonavane. Explore her acrylic paintings that showcase modern artistic expressions and creative compositions."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://palettepulse.com/artist/jyotsna-sonavane"
+    />
+    <meta property="og:image" content="assets/logo-placeholder.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jyotsna Sonavane - Artist | Palette Pulse"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the contemporary art of Jyotsna Sonavane. Explore her acrylic paintings that showcase modern artistic expressions and creative compositions."
+    />
+    <meta name="twitter:image" content="assets/logo-placeholder.png" />
+
+    <!-- Google Fonts - Poppins font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading spinner -->
+    <div id="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading Palette Pulse...</p>
+    </div>
+
+    <!-- Header section: Contains the top bar and main navigation -->
+    <header>
+      <!-- Top bar: Contains logo and utility icons (search, account, cart) -->
+      <div id="top-bar">
+        <!-- Logo: Links back to homepage -->
+        <a href="index.html" class="logo">
+          <img
+            src="assets/logo-placeholder.png"
+            alt="Palette Pulse Logo"
+            width="120"
+          />
+        </a>
+
+        <!-- Utility navigation: Search bar and icons -->
+        <div class="utility-nav">
+          <!-- Search form -->
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search artworks..."
+              aria-label="Search artworks"
+            />
+            <button type="submit" aria-label="Search">
+              <span>🔍</span>
+            </button>
+          </form>
+
+          <!-- Utility icons -->
+          <a href="#" class="icon-link" aria-label="View Favourites">
+            <span>♥</span>
+            <span class="sr-only">View Favourites</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Account">
+            <span>👤</span>
+            <span class="sr-only">Account</span>
+          </a>
+          <a href="#" class="icon-link" aria-label="Shopping Cart">
+            <span>🛒</span>
+            <span class="sr-only">Shopping Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main navigation: Primary site navigation with dropdowns -->
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li class="dropdown-parent">
+            <a href="prints.html">Prints</a>
+            <ul class="dropdown">
+              <li><a href="wallArt.html">Wall Art</a></li>
+              <li><a href="vintagePrints.html">Vintage</a></li>
+              <li><a href="photographyPrints.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-parent">
+            <a href="paintings.html">Paintings</a>
+            <ul class="dropdown">
+              <li><a href="abstractPaintings.html">Abstract Art</a></li>
+              <li><a href="indianPaintings.html">Indian Art</a></li>
+              <li><a href="blackWhitePaintings.html">Black & White</a></li>
+              <li><a href="modernArtPaintings.html">Modern Art</a></li>
+              <li><a href="landscapePaintings.html">Landscape</a></li>
+              <li><a href="naturePaintings.html">Nature</a></li>
+            </ul>
+          </li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main content: Contains the primary page content -->
+    <main>
+      <!-- Promotional Banner -->
+      <div class="promo-banner">
+        <p>
+          ✨ EXTRA 20% OFF Orders Over ₹5000 | Ends in:
+          <span id="countdown">15:04:48</span> ✨
+        </p>
+      </div>
+
+      <!-- Artist Container -->
+      <div class="category-container">
+        <!-- Enhanced Artist Profile Section -->
+        <div class="artist-profile-section">
+          <div class="artist-profile-content">
+            <div class="artist-profile-image">
+              <img
+                src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-36-x-36-inches-Acrylic-on-canvas-.jpeg"
+                alt="Jyotsna Sonavane"
+                loading="lazy"
+              />
+            </div>
+            <div class="artist-profile-info">
+              <h1>Jyotsna Sonavane</h1>
+              <p class="artist-specialty">
+                Contemporary Art & Acrylic Paintings
+              </p>
+              <p class="artist-location">📍 Mumbai, India</p>
+              <div class="artist-stats">
+                <div class="stat">
+                  <span class="stat-number">6</span>
+                  <span class="stat-label">Artworks</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Years</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Original</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Artist Description -->
+        <div class="artist-description">
+          <h2>About the Artist</h2>
+          <div class="description-content">
+            <p>
+              Jyotsna Sonavane is a contemporary artist known for her vibrant
+              acrylic paintings that explore modern themes and artistic
+              expressions. Her work showcases a unique blend of traditional
+              techniques with contemporary sensibilities, creating visually
+              striking compositions that resonate with art enthusiasts.
+            </p>
+            <p>
+              With a focus on acrylic medium, Jyotsna creates dynamic artworks
+              that capture the essence of modern life while maintaining artistic
+              integrity. Her paintings are characterized by bold colors,
+              expressive brushwork, and thoughtful compositions that invite
+              viewers to explore deeper meanings.
+            </p>
+          </div>
+        </div>
+
+        <!-- Enhanced Artist's Paintings Section -->
+        <section class="artist-paintings">
+          <div class="section-header">
+            <h2>Paintings by Jyotsna Sonavane</h2>
+            <p class="section-subtitle">
+              Discover her unique contemporary style
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-36-x-36-inches-Acrylic-on-canvas-.jpeg"
+                  alt="Contemporary Art by Jyotsna Sonavane"
+                  loading="lazy"
+                />
+                <span class="badge featured">Featured</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Contemporary Art</h3>
+                <p class="artist-name">by Jyotsna Sonavane</p>
+                <p class="dimensions">36" x 36" • Acrylic on Canvas</p>
+                <p class="price">₹28,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-15-x-15-inches-Acrylic-on-canvas-2.jpeg"
+                  alt="Modern Expression by Jyotsna Sonavane"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Modern Expression</h3>
+                <p class="artist-name">by Jyotsna Sonavane</p>
+                <p class="dimensions">15" x 15" • Acrylic on Canvas</p>
+                <p class="price">₹12,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-15-x-15-inches-Acrylic-on-canvas-1.jpeg"
+                  alt="Abstract Composition by Jyotsna Sonavane"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Abstract Composition</h3>
+                <p class="artist-name">by Jyotsna Sonavane</p>
+                <p class="dimensions">15" x 15" • Acrylic on Canvas</p>
+                <p class="price">₹15,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-36-x-36-inches-Acrylic-on-canavas.jpeg"
+                  alt="Vibrant Colors by Jyotsna Sonavane"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Vibrant Colors</h3>
+                <p class="artist-name">by Jyotsna Sonavane</p>
+                <p class="dimensions">36" x 36" • Acrylic on Canvas</p>
+                <p class="price">₹32,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-48-x-48-inches-Acrylic-on-canvas-.jpeg"
+                  alt="Artistic Vision by Jyotsna Sonavane"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Artistic Vision</h3>
+                <p class="artist-name">by Jyotsna Sonavane</p>
+                <p class="dimensions">48" x 48" • Acrylic on Canvas</p>
+                <p class="price">₹45,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="painting-card">
+              <div class="image-container">
+                <img
+                  src="images/Artist-Jyotsna-Sonavane/Jyotsna-Sonavane-48-x-48-inches-Acrylic-on-canvas.jpeg"
+                  alt="Creative Expression by Jyotsna Sonavane"
+                  loading="lazy"
+                />
+                <span class="badge new">New</span>
+                <div class="card-overlay">
+                  <button class="view-details-btn">View Details</button>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Creative Expression</h3>
+                <p class="artist-name">by Jyotsna Sonavane</p>
+                <p class="dimensions">48" x 48" • Acrylic on Canvas</p>
+                <p class="price">₹48,000</p>
+                <div class="card-actions">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    ♥
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer: Site footer with additional links and information -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Palette Pulse</h3>
+          <p>Curating beautiful art for your space</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="paintings.html">Original Paintings</a></li>
+            <li><a href="prints.html">Art Prints</a></li>
+            <li><a href="photographyPrints.html">Photography</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Palette Pulse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript file for interactivity -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

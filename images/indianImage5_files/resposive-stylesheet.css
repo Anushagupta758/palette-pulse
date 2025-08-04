@@ -1,0 +1,211 @@
+@media (max-width: 992px) {
+	.banner-content{padding: 74px 34px;}
+	.banner-content h3{font-size: 28px}
+	.banner-content h2{font-size: 33px}
+	.banner-content h5{font-size: 16px;}
+	.right-tab-text-part h3{font-size: 28px;margin-bottom: 25px;}
+	.right-tab-text-part { padding: 35px;}
+	.art-advice-text{width: 34%;padding: 15px 0 16px 30px;}
+	.art-advice-text h4 { font-size: 23px;}
+    .art-advice-text p{font-size: 13px}
+    .art-advice-text h6{font-size: 16px}
+    .email-us-on, .cal-us-on {  font-size: 12px;}
+    .social-link-part a{margin: 0 3px;}
+    .nav > li {   margin-left: 16px;}
+}
+
+@media (max-width: 767px) {
+	
+	.top-call-part,.top-visit-gallery-part a{font-size: 11px;}
+	.top-visit-gallery-part a{ margin-top: 9px;}
+	.log-out-part{width: 86px;}
+	.top-cart-part{width: 86px;}
+	.top-currency-part{width: 72px;}
+	.social-link-part a{background-size:152px;width: 33px;height:37px; }
+	.social-link-part a.twt-social{background-position:-40px 0px }
+	.social-link-part a.inst-social{background-position:-82px 0px }
+	.social-link-part a.pin-social{background-position:-120px 0px }	
+	.middile-header-part { padding-top: 12px;}
+	.top-seardch-box{margin-top: 11px;}
+	.social-link-part {padding-top: 11px;}
+	.banner-part{margin-top: 2px;}
+	.navigation-part {   padding-top:0px;}
+	
+	.navbar-toggle{background: #000;}
+	.navbar-toggle .icon-bar{background: #fff;}
+	.nav > li{margin-left: 0}
+	.nav > li > a{padding: 10px 15px;}
+	.navbar-nav > li > a{background: #ccc;}
+	
+	.banner-content{top: -35px}
+	.banner-content {  padding: 37px 34px;}
+	
+	.banner-content h3{font-size: 22px}
+	.banner-content h2{font-size: 28px;margin: 11px 0 7px;}
+	.banner-content h5{font-size: 16px;}
+	.btn-browse{padding: 7px 15px;font-size: 11px;}
+	.right-tab-text-part {    padding: 15px;}
+	.right-tab-text-part h3 {    font-size: 24px;}
+	
+	.assurance-part h4{font-size: 16px;margin-bottom: 7px}
+	.assurance-part p{font-size: 13px;}
+	
+	.icon-handpic, .icon-certificate, .icon-experties{background-size:50px 	}
+	.icon-certificate {   background-position: 0 -88px;}
+	.icon-experties {  background-position: 0 -184px;}
+	.assuraence-text {   margin-bottom: 0;}
+	.hover-pic-abstrct{border-width:10px }
+	.hover-overlay h4{font-size: 18px;}
+	.experienced-inner-box h6{font-size: 12px;line-height: 20px;}
+	.foorter-part a{margin: 5px 0;display: inline-block;}
+	.experienced-inner-box h3 { font-size: 24px;}
+	.desktop-version-pic{display: none}
+	.tab-version-pic{display: block}
+	.art-advice-text {    width: 36%;    padding: 13px 0 13px 10px;}
+	.select-item-quality{margin-bottom: 15px;}
+	
+	.top-images-item img{height: 300px;}
+	
+	.product-sizes-part, .product-category-part{margin-bottom: 10px;    font-size: 11px;}
+	.product-delivery-time{padding-top: 0px;}
+	.woof_sid_auto_shortcode .woof_container{max-width:100%;}
+	#boutiqueCntr li img{max-width:250px;}
+	#boutiqueCntr li .product-image{text-align:center;}
+	.product-image > a{max-width:100%;}
+	#boutiqueCntr li .product-image{max-width:300px;}
+	#boutiqueCntr li{max-width:325px;}
+	#boutiqueCntr strong.product-name a{font-size:15px;}
+	.search-alph{min-height:135px;}
+	.service-heading{margin-top:25px;}
+	.adpexhibit{ margin-left: 8%;text-align: center;width: 82%!important;}
+	.subscribe-inner-part h6{font-size:12px;}
+	.blog-article{width:100%;}
+	.blog-article:nth-child(2n){padding-right:0px;}
+	.blog-article:nth-child(2n+1){padding-left:0px;}
+	.aboutteamimg > img{width:100%;}
+	.contacttext{width:100%;}
+	.contactmap{width:100%;}
+	
+}
+
+@media (max-width: 599px) {
+	.top-header{height: auto}
+	.top-header .col-xs-3{width: 50%}
+	.top-call-part.col-md-4.col-sm-3.col-xs-3{width: 100%}
+	.top-right-part{width: 100%; border-top:1px solid #ccc; }
+	.top-currency-part,.my-account-part,.log-out-part,.top-cart-part{width: 33.33%;}
+	.top-currency-part{border: 0}
+	.log-out-part{border-right:0 }
+	.top-cart-part{border-right:0 }
+	.middile-header-part .col-xs-4{width: 50%;}	
+	.top-seardch-box {   margin-top: 12px;margin-bottom: 32px;}
+	.social-link-part {    padding-top: 0px;    float: left !important;padding-left: 15px;}
+	.navbar-toggle {    margin-left: 15px;    margin-top: -34px;    margin-bottom: 0;}	
+	.top-images-item img{height: 220px;}
+	
+	.banner-content{top: -27px;right: 65px;width: 40%;height: 128%;}
+	.banner-content h3{font-size: 18px;margin: 8px 0;}
+	.banner-content h2{font-size: 22px;margin: 7px 0 7px;}
+	.banner-content h5{font-size: 13px;}
+	.inner-banner-content .btn-browse{margin-top: 20px;}
+	.right-tab-text-part, .left-pic-part{width: 100%}
+	.latest-art-work-part .col-xs-8{width: 100%}
+	.latest-art-work-part .col-xs-4{width: 50%}
+	.latest-art-work-part .clear{display: none}
+	.tab-version-pic{display: none}
+	.mobile-version-pic{display: block;}
+	.left-partadvice-pic,.art-advice-text{width: 100%}
+	.art-advice-text{padding: 15px;}
+	.experienced-update .col-xs-3  {width: 50%; margin-bottom: 35px;}
+	.banner-tab-part ul li a{font-size: 12px;padding: 5px;}
+	
+	.latest-art-title{font-size: 23px;}
+	.latest-art-title:after{width: 80px;margin-left: -40px;}
+	.top-visit-gallery-part{text-align: right}
+	
+	.details-page [class*="col-"]{width: 100%}
+	.artist-details-part{padding-top: 15px;padding-bottom: 20px;}
+	.top-pic-details img{width: 100%}
+	.product-sizes-part,.product-category-part{display: inline-block; width: 32%;padding-right: 15px;}
+}
+
+
+@media (max-width:479px) {
+	.top-seardch-box input[type="text"] {
+    padding: 0px 4px !important;
+    /* border: 1px solid red; */
+    height: 31px;
+    line-height: 30px !important;
+}
+	.assurance-part .col-xs-4,.assurance-part .col-xs-8{width: 100%}
+	.assure-log-part{margin-bottom: 15px;}
+	.subscribe-inner-part input[type="text"]{width: 140px;}
+	.subscribe-inner-part{padding: 0 15px;}
+	.inner-partner-pay{
+		width: 100%;display: block;border-top:1px solid #ccc;border-left:0;  
+	}
+	.product-sizes-part,.product-category-part{width: 48%}
+	.singleprdtext {
+        height: 25px!important;
+    }
+	label{margin-bottom:none;}
+	.btn-default{margin-left:13%!important;}
+}
+
+@media (max-width:430px) {
+	.top-seardch-box input[type="text"] {
+    padding: 12px 0px 12px 12px !important;
+	}
+	.top-currency-part{width: 95px !important	} 
+	/*.my-account-part{width:34%	} */
+	.my-account-part{width:54%	} 
+	.log-out-part{		width:18%;font-size: 10px;}
+	.top-cart-part{		width:19%}
+	.top-cart-part a {
+        font-size: 11px;
+        background: url(../images/cart-icon.png) no-repeat 0 -1px;
+        padding-left: 18px;
+        background-size: 13px;
+    }
+    .top-currency-part select {
+        font-size: 10px;
+        width: 80px !important;
+    }
+	.latest-art-work-part .col-xs-4{width: 100%}
+	.middile-header-part .col-xs-4{width: 100%}
+	.top-seardch-box {   margin-top: 12px;    margin-bottom: 12px;}
+	.social-link-part {padding-bottom: 5px;  }
+	.navbar-toggle{margin-top: -59px;}
+	.logo-part{text-align: center}
+	.logo-part a{display: inline-block}
+	.banner-content {   top: -27px;   right: 9px;    width: 55%;    height: 133%;}
+	.inner-banner-content .btn-browse {   margin-top: 10px;}
+	.banner-content h3{margin: 2px 0}
+	
+	.experienced-update .col-xs-3{width: 100%; border-left:0; border-bottom: 1px solid #ccc;margin-bottom:0;padding-bottom: 15px;padding-top: 15px; }
+	.experienced-update .col-xs-3:last-child{border: 0}
+	.foorter-part .col-xs-6{width: 100%; text-align: center}
+	.owl-slider-part {   padding: 0 40px;}
+	
+	.show-search-listing-part  .col-xs-6{width: 100%;}
+	.headeing-seach-by .col-xs-8,.headeing-seach-by .col-xs-4{width: 100%}
+	.search-by-part{margin: 15px 0 0;}
+	.product-sizes-part,.product-category-part,.artist-details-part{width: 100%; text-align: center}
+	 .product-category-part,.product-delivery-time{text-align: center}
+	.product-value-part,.product-buy-part,.product-free-shipping-part{text-align: left;padding-left: 0;    font-size: 16px;}
+	.cart_item .designed-by{text-align: right !important;}
+	.singleprdtext {
+        height: 25px!important;
+    }
+	label{margin-bottom:none;}
+	.btn-default{margin-left:13%!important;}
+}
+@media (max-width:365px) {
+	.top-seardch-box input[type="text"] {
+    padding: 12px 0px 12px 12px !important;
+	}
+	.banner-content h2 {  font-size: 18px;   margin: 0px 0 1px;}
+	.banner-tab-part ul li a {   font-size: 8px;    padding: 5px;}
+	.category-search-part .col-xs-6{width: 100%}
+	.banner-content .btn-browse {   padding: 7px 6px;    font-size: 11px;}
+}
